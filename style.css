@@ -1,0 +1,191 @@
+img {
+  width: 100%;
+  max-width: 100%;
+  height: auto;
+}
+
+a {
+  text-decoration: none;
+}
+
+.header_hide {
+  display: none;
+}
+.fixed-top {
+  position: fixed !important;
+  width: 100%;
+  top: 0;
+  left: 0;
+}
+.slide-image {
+  width: 100%;
+  height: 800px !important;
+}
+
+.navbar-custom {
+  position: relative;
+  min-height: 50px;
+  border: 1px solid transparent;
+  border-width: 0;
+  border-radius: 0;
+  background-image: linear-gradient(to bottom, #003949, #006b89);
+}
+.navbar-brand-custom{
+  float: left;
+  color: #fff;
+  height: 50px;
+  padding: 15px 15px;
+  font-size: 1.4em;
+  line-height: 20px;
+}
+.affix {
+    top: 0;
+    width: 100%;
+    z-index: 9999 !important;
+}
+.affix + .container-fluid {
+    margin-top: 50px;
+}
+
+.experience {
+  margin: 30px 10% 30px 10%;
+}
+.experience-content {
+  padding: 10px 20px 10px 20px;
+  background-color: #dddddd;
+  box-shadow: 4px 6px 10px rgba(0,0,0,0.5);
+}
+.content-head {
+  color: #A92733;
+  font-size: 1.3em;
+}
+.content-body {
+  font-size: 1.1em;
+}
+#portfolio_section {
+  background-image: url("image/portfolio_background.jpg");
+}
+#experience_section {
+  background-image: url("image/experience_background.jpg");
+  padding-top: 50px;
+  padding-bottom: 50px;
+}
+
+#contact_section {
+  background-image: url("image/contact_background.jpg");
+}
+.container-portfolio {
+  position: relative;
+  margin-top: 100px;
+}
+.white-panel {
+  position: absolute;
+  background: #eeeeee;
+  box-shadow: 7px 7px 10px rgba(0,0,0,0.3);
+  padding: 10px;
+  padding-top: 30px;
+}
+.white-panel h1 {
+  font-size: 1em;
+}
+.white-panel h1 a {
+  color: #A92733;
+}
+.white-panel:hover {
+  box-shadow: 12px 12px 10px rgba(0,0,0,0.3);
+  margin-top: -5px;
+  -webkit-transition: all 0.3s ease-in-out;
+  -moz-transition: all 0.3s ease-in-out;
+  -o-transition: all 0.3s ease-in-out;
+  transition: all 0.3s ease-in-out;
+}
+.btn-unfold {
+  padding-top: 6px;
+}
+
+.pin {
+  background-color: #aaa;
+  background-image: linear-gradient(left, hsla(0,0%,100%,.2), hsla(0,0%,0%,.2));
+  display: block;
+  height: 1.2em;
+  left: 50%;
+  margin: -1em -.05em;
+  position: absolute;
+  top: 50%;
+  width: .1em;
+}
+.pin:after {
+  background-color: #ce0e0e;
+  background-image: radial-gradient(25% 25%, circle, hsla(0,0%,100%,.2), hsla(0,0%,0%,.2));
+  border-radius: 50%;
+  box-shadow: inset 0 0 0 1px hsla(0,0%,0%,.1),
+              inset .2em .2em .2em hsla(0,0%,100%,.2),
+              inset -.2em -.2em .2em hsla(0,0%,0%,.2),
+              0.85em 0.85em .25em hsla(0,0%,0%,.15);
+  content: '';
+  height: .8em;
+  left: -.35em;
+  position: absolute;
+  top: -.65em;
+  width: .8em;
+}
+.pin:before {
+  background-color: hsla(0,0%,0%,.1);
+  box-shadow: 0 0 .25em hsla(0,0%,0%,.1);
+  content: '';
+  height: 0.7em;
+  left: 0;
+  position: absolute;
+  top: .5em;
+  transform: rotate(57.5deg);
+  transform-origin: 50% 100%;
+  width: .1em;
+}
+
+.pin-position {
+  position: relative;
+  top: -20px;
+}
+
+.contact_list {
+  text-align: center;
+  font-family: "Monotype Corsiva", cursive;
+  color: #423232;
+  margin: 200px 15% 520px 15%;
+}
+
+.contact-icon {
+  font-size: 3.5rem;
+  display: inline-block;
+  height: 65px;
+  width: 65px;
+  line-height: 75px;
+  margin: 15px;
+  border-radius: 50%;
+  color: #fff;
+  transition: transform 0.3s;
+}
+.contact-icon:hover {
+  cursor: pointer;
+  transform: translate(0, -12px);
+  color: #fff;
+}
+.facebook-icon {
+  background-color: #3b5998;
+}
+
+.wechat-icon {
+  background-color: #7bb32e;
+}
+
+.github-icon {
+  background-color: #c9510c;
+}
+
+.linkedin-icon {
+  background-color: #0077b5;
+}
+
+.email-icon {
+  background-color: #13bef7
+}
