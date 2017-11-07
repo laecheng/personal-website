@@ -8,9 +8,9 @@ a {
   text-decoration: none;
 }
 
-.header_hide {
+/*.header-hide {
   display: none;
-}
+}*/
 
 .fixed-top {
   position: fixed !important;
@@ -68,7 +68,7 @@ a {
 .experience-content {
   padding: 10px 20px 10px 20px;
   background-color: #dddddd;
-  box-shadow: 4px 6px 10px #0008;
+  box-shadow: 4px 6px 10px #000;
 }
 
 .content-head {
@@ -119,7 +119,7 @@ a {
 .white-panel {
   position: absolute;
   background: #eeeeee;
-  box-shadow: 7px 7px 10px #0005;
+  box-shadow: 7px 7px 10px #000;
   padding: 10px;
   padding-top: 30px;
 }
@@ -133,7 +133,7 @@ a {
 }
 
 .white-panel:hover {
-  box-shadow: 12px 12px 10px #0005;
+  box-shadow: 12px 12px 10px #000;
   margin-top: -5px;
   -webkit-transition: all 0.3s ease-in-out;
   -moz-transition: all 0.3s ease-in-out;

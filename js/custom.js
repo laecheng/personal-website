@@ -49,7 +49,7 @@ $(document).ready(function() {
       });
     }
   });
-  
+
   // initialize the plugin for pinterest grid
   $('#portfolio_grid').pinterest_grid({
     no_columns: 4,
@@ -66,15 +66,15 @@ $(document).ready(function() {
       $(this).html("Show more")
     }
   });
-  $(window).resize(function() {
-    var window_size = $(window).width();
-    if(window_size <= 752) {
-      $("#myCarousel").addClass("header_hide");
-      $(".navbar-custom").removeClass("affix-top");
-      $(".navbar-custom").addClass("fixed-top");
-    } else {
-      $("#myCarousel").removeClass("header_hide")
-      $(".navbar-custom").removeClass("fixed-top");
-    }
-  });
+  // $(window).resize(function() {
+  //   var window_size = $(window).width();
+  //   if(window_size <= 752) {
+  //     $("#myCarousel").addClass("header-hide");
+  //     $(".navbar-custom").removeClass("affix-top");
+  //     $(".navbar-custom").addClass("fixed-top");
+  //   } else {
+  //     $("#myCarousel").removeClass("heade-hide")
+  //     $(".navbar-custom").removeClass("fixed-top");
+  //   }
+  // });
 });
