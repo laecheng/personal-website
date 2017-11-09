@@ -78,15 +78,25 @@
       <div class="collapse navbar-collapse" id="navcollapse">
         <ul class="nav navbar-nav">
           <li><a href="#experience_section">Experience</a></li>
-          <li><a href="#portfolio">Portfolio</a></li>
+          <li class="dropdown"><a href="#" class="dropdown-toggle" data-toggle="dropdown">Portfolio
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li><a href="#portfolio_section">Online Music Platform</a></li>
+              <li><a href="#portfolio_section">Movie Trailer Website</a></li>
+              <li><a href="#portfolio_section">Text Compressor</a></li>
+              <li><a href="#portfolio_section">Auto Complete</a></li>
+              <li><a href="#portfolio_section">Android Application</a></li>
+            </ul>
+          </li>
           <li><a href="#contact_section">Contact</a></li>
+          <li><a href="https://drive.google.com/file/d/1j593SY7a71VpwlNNuiRCl2n8uqzgda2Q/view">Resume</a></li>
         </ul>
       </div>
     </div>
   </nav>
 
   <!-- bootstrap grid layout experience section -->
-  <section id="experience_section" class="exp-bg">
+  <section id="experience_section" class="exp-bg container-fluid">
     <h2 class="section-header">My Working Experience</h2>
     <!-- The bootstrap grid layout starts from here -->
     <div class="container">
@@ -94,15 +104,14 @@
         <div class="col-xs-12">
           <article class="experience">
             <div class="experience-content">
-              <h2 class="content-head">Software Engineer Intern</h2>
+              <h2 class="content-head">Online Music Platform Launch</h2>
               <p class="content-body">@
-                <a href="http://www.chinahongming.com/">Hongming Electronics, China</a>
-                <span class="time-stamp">July 2016 - Sep 2016</span>
+                <a href="https://www.qooqles.com/">qooqles.com</a>
+                <span class="time-stamp">Jun 2017 – Sep 2017</span>
               </p>
-              <p class="content-body">■ Designed the responsive website to support
-                small devices.</p>
-              <p class="content-body">■ Optimized the website and decreased the
-                page loading time by 30%.</p>
+              <p class="content-body">■ Individually developed an online platform to help people share and discover music.</p>
+              <p class="content-body">■ Used the LAMP stack (Linux, Apache, MySQL, PHP) and the Laravel PHP framework.</p>
+              <p class="content-body">Designed the user interface using HTML5, CSS3, JavaScript, BootStrap, JQuery and AJAX.</p>
             </div>
           </article>
         </div>
@@ -116,10 +125,9 @@
                 <a href="http://www.chinahongming.com/">Hongming Electronics, China</a>
                 <span class="time-stamp">July 2016 - Sep 2016</span>
               </p>
-              <p class="content-body">■ Designed the responsive website to support
-                small devices.</p>
-              <p class="content-body">■ Optimized the website and decreased the
-                page loading time by 30%.</p>
+              <p class="content-body">■ Designed and developed a static web page to introduce the newly released product.</p>
+              <p class="content-body">■ Optimized this page to be compatible with variety of devices which have different viewport.</p>
+              <p class="content-body">■ Optimized the static website and decreased the page loading time by 30%.</p>
             </div>
           </article>
         </div>
@@ -133,12 +141,9 @@
                 <a href="https://github.com/laecheng/Friend-Track-App/tree/master">GitHub</a>
                 <span class="time-stamp">Oct 2016 - Jan 2017</span>
               </p>
-              <p class="content-body">■ Developed an Android application allowing
-                the users to pair with a partner and receive a notification when the
-                partner has visited a preset location.</p>
-              <p class="content-body">■ Contributed to the team by collecting requirements from clients,
-                writing the user interface and tracking project status using JIRA.</p>
+              <p class="content-body">■ Developed an Android application using Android Studio as a team member.</p>
               <p class="content-body">■ Implemented the login part using Google's Firebase Toolkit.</p>
+              <p class="content-body">■ Contributed to the team by collecting requirements from clients.</p>
             </div>
           </article>
         </div>
@@ -152,9 +157,7 @@
                 <a href="http://krauseinnovationcenter.org/">Foothill College KCI</a>
                 <span class="time-stamp">Jan 2015 - June 2015</span>
               </p>
-              <p class="content-body">■  Provided tech support for students and
-                educators in the computer lab.
-                using computer in the lab.</p>
+              <p class="content-body">■ Provided tech support to students and professors using Lab Computers.</p>
             </div>
           </article>
         </div>
@@ -163,60 +166,118 @@
     <!-- End of bootstrap grid layout -->
   </section>
 
-  <!-- Udacity Project 2 goes from here -->
-  <section id="portfolio">
-    <h2 class="section-header">Udacity project</h2>
-    <header>
-      <div class="container">
-        <div class="row">
-          <div class="col-xs-12">
-            <div class="udacity-logo">
-              <img src="image/udacity_logo.png" alt="udacity logo">
-            </div>
-            <div class="name-info">
-              <p>CHAORAN CHENG</p>
-              <p>FRONT-END NINJA</p>
-            </div>
-            <hr class="hr-style">
-          </div>
-        </div>
-      </div>
-    </header>
-    <figure class="udacity-background container">
-      <img src="image/udacity.png" alt="udacity">
-    </figure>
+  <!-- The portfolio section starts from here -->
+  <section id="portfolio_section" class="portfolio-bg">
+    <h2 class="section-header">My Portfolios</h2>
+    <!-- Bootstrap grid layout starts from here -->
     <div class="container">
       <div class="row">
         <div class="col-xs-12">
-          <p class="portfolio_header">Featured Work</p>
-        </div>
-      </div>
-      <div class="row">
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <article class="udacity-portfolio">
-            <img class="udacity-portfolio__image" src="image/dummy1.png" alt="application icon">
-            <h2 class="udacity-portfolio__heading">Movie Trailer Website</h2>
-            <p>Source Code<a href="https://github.com/laecheng/Movie-Trailer-Website"> here</a></p>
-          </article>
-        </div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <article class="udacity-portfolio">
-            <img class="udacity-portfolio__image" src="image/dummy2.png" alt="sunflower">
-            <h2 class="udacity-portfolio__heading">Project is coming</h2>
-            <p>Source Code<a href="#dummy"> here</a></p>
-          </article>
-        </div>
-        <!-- To fix the problem one col is taller than another -->
-        <div class="clearfix visible-sm-block"></div>
-        <div class="col-sm-6 col-md-4 col-lg-3">
-          <article class="udacity-portfolio">
-            <img class="udacity-portfolio__image" src="image/dummy3.png" alt="tree under sunshine">
-            <h2 class="udacity-portfolio__heading">Project is coming</h2>
-            <p>Source Code<a href="#dummy"> here</a></p>
-          </article>
+          <div id="portfolio_grid" class="container-portfolio">
+            <article class="white-panel">
+              <span class="pin pin-position"></span>
+              <img src="image/music_ocean.jpg" alt="music ocean">
+              <h2><a target="_blank" href="https://www.qooqles.com/">Online Music Platform</a></h2>
+              <span class="label label-info">Web App Development</span>
+              <span class="label label-info">PHP</span>
+              <span class="label label-info">Laravel</span>
+              <span class="label label-info">MySQL</span>
+              <span class="label label-info">HTML</span>
+              <span class="label label-info">CSS3</span>
+              <span class="label label-info">JavaScript</span>
+              <span class="label label-info">JQuery</span>
+              <span class="label label-info">AJAX</span>
+              <div class="btn-unfold">
+                <a href="#self" class="link-toggle" data-toggle="collapse" data-target="#music_ocean_intro">Show more</a>
+              </div>
+              <div id="music_ocean_intro" class="collapse">
+                <p>Developed an online platform to help people share
+                and discover music. The platform utilized the LAMP stack
+                (Linux,Apache, MySQL, PHP) stack and the Laravel PHP
+                framework. Designed the web page and the user interface
+                using HTML, CSS, JavaScript, BootStrap, JQuery and AJAX.
+                Developed security strategies to protect servers from SQL injection,
+                specifically XSS attacks.</p>
+              </div>
+            </article>
+            <article class="white-panel">
+              <span class="pin pin-position"></span>
+              <img src="image/python_logo.jpg" alt="movie trailer website">
+              <h2><a target="_blank" href="https://github.com/laecheng/Movie-Trailer-Website">Movie Trailer Website</a></h2>
+              <span class="label label-info">Python 3</span>
+              <span class="label label-info">OOP</span>
+              <span class="label label-info">HTML</span>
+              <span class="label label-info">CSS</span>
+              <div class="btn-unfold">
+                <a href="#self" class="link-toggle" data-toggle="collapse" data-target="#trailer_intro">Show more</a>
+              </div>
+              <div id="trailer_intro" class="collapse">
+                <p>server-side code to store a list of your favorite movies,
+                  including box art imagery and a movie trailer URL.
+                  Serve data as a web page allowing visitors to
+                  review their movies and watch the trailers.</p>
+              </div>
+            </article>
+            <article class="white-panel">
+              <span class="pin pin-position"></span>
+              <img src="image/huffman.jpg" alt="huffman coding">
+              <h2><a target="_blank" href="https://github.com/laecheng/HuffmanCoding">Text Compressor</a></h2>
+              <span class="label label-info">C++</span>
+              <span class="label label-info">Huffman Coding</span>
+              <span class="label label-info">Data Structure</span>
+              <span class="label label-info">Algorithm</span>
+              <div class="btn-unfold">
+                <a href="#self" class="link-toggle" data-toggle="collapse" data-target="#huffman_coding">Show more</a>
+              </div>
+              <div id="huffman_coding" class="collapse">
+                <p>This is a program written in C++. It provides an efficiently
+                  implementation for Huffman Coding, which is a data compression
+                  algorithm. This program can compress text files and saves 80%
+                  storage space from the original text.</p>
+              </div>
+            </article>
+            <article class="white-panel">
+              <span class="pin pin-position"></span>
+              <img src="image/auto_complete.jpg" alt="auto complete">
+              <h2><a target="_blank" href="https://github.com/laecheng/AutoComplete">Auto-Compelte</a></h2>
+              <span class="label label-info">C++</span>
+              <span class="label label-info">Trie</span>
+              <span class="label label-info">Data Structure</span>
+              <span class="label label-info">Algorithm</span>
+              <div class="btn-unfold">
+                <a href="#self" class="link-toggle" data-toggle="collapse" data-target="#auto_complete">Show more</a>
+              </div>
+              <div id="auto_complete" class="collapse">
+                <p>This is a program written in C++. It provides a very efficient
+                   algorithm for auto-complete of strings. The program is implemented
+                   with a trie and a well-designed heap-based topological sorting algorithm.
+                    It speeds up the naïve BFS/DFS searching approach over a factor
+                    of around 1000 when tested on a dictionary of size 90MB.</p>
+                    <a href="#"></a>
+              </div>
+            </article>
+            <article class="white-panel">
+              <span class="pin pin-position"></span>
+              <img src="image/Android-App.jpg" alt="Android App">
+              <h2><a target="_blank" href="https://github.com/laecheng/Friend-Track-App">Friend Track App</a></h2>
+              <span class="label label-info">Java</span>
+              <span class="label label-info">Android App Development</span>
+              <span class="label label-info">Android Studio</span>
+              <div class="btn-unfold">
+                <a href="#self" class="link-toggle" data-toggle="collapse" data-target="#androind_app">Show more</a>
+              </div>
+              <div id="androind_app" class="collapse">
+                <p>An Android application allowing the users to pair with a
+                  partner and receive a notification when the partner has
+                  visited a preset location.
+                </p>
+              </div>
+            </article>
+          </div>
         </div>
       </div>
     </div>
+    <!-- End of Bootstrap grid layout -->
   </section>
 
   <!-- The contact section starts from here -->
@@ -237,15 +298,12 @@
       </div>
     </div>
   </section>
-
-
   <footer>
     <br>
     <div class="text-center">
       <p>Copyright &copy; Chaoran (Kelvin) Cheng. All right reserved.</p>
     </div>
   </footer>
-
   <!-- Modal -->
   <div class="modal fade" id="qrModal" role="dialog">
     <div class="modal-dialog">
