@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Neighborhood Map</title>
+    <link rel="stylesheet" href="./css/app.css">
+  </head>
+  <body>
+    <div class="container">
+      <div class="options-box">
+        <h1>Bart location</h1>
+        <div>
+          <input data-bind="textInput: keyWord" placeholder="Station location">
+        </div>
+        <ul data-bind="foreach: filtedList">
+          <li data-bind="text: title, click: $parent.showLocation"></li>
+        </ul>
+        <h1>Related News</h1>
+        <p>Supported by New York Times
+          <a href="http://developer.nytimes.com.">
+            <img id="nytLogo" src="img\poweredby_nytimes_30a.png" alt="New York Times Logo">
+            </img>
+          </a>
+        </p>
+        <h2 data-bind="text: nytError"></h2>
+        <ul data-bind="foreach: articleList">
+          <li><a data-bind="text: headline, attr: {href: url}"></a></li>
+        </ul>
+      </div>
+      <div id="map"></div>
+    </div>
+    <script src="js/lib/jquery.min.js"></script>
+    <script src="js/lib/knockout-3.2.0.js"></script>
+    <script src="js/app.js"></script>
+    <script async src="https://maps.googleapis.com/maps/api/js?key=AIzaSyCqY_eKWsmk2gwkNSjGoQm09r7VquMn65g&v=3&callback=loadApp" onerror="handleError()"></script>
